@@ -1,0 +1,498 @@
+<!Doctype html >
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet"  href="css/style.css">
+  
+  
+<style>
+ 
+* {
+  box-sizing: border-box;
+}
+
+.zoom {
+  
+  transition: transform .2s;
+}
+
+.zoom:hover {
+
+
+  transform: scale(1.1); 
+} 
+  
+ </style>
+</head>
+<body>
+
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> 
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Vamazon</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.php">About </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Electronics 
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Smart Phones</a>
+          <a class="dropdown-item" href="#">Dish Washer </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Cosmetics</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+
+
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+	<a href="https://www.amazon.in/s?k=home+kitchen+and+outdoor+items&crid=2OZV8YF7V0KJY&sprefix=home+kitchen+out%2Caps%2C450&ref=nb_sb_ss_ts-doa-p_1_16">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/OHL/BAU/june/hnk/3000x1200._CB603852206_.jpg" alt="Los Angeles" width="1100" height="500">
+	  </a>
+      <div class="carousel-caption">
+        <h3  style="font-size:2vw;">Home & Kitchen | Outdoor Living | Kitchen Tools | Home Improvement | Household Cleaning Supplies And Much More . </h3>
+        <p>with such a great offers !</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <a href="https://www.amazon.in/b/?_encoding=UTF8&node=9361420031&ref_=sv_top_ap_mega_3 ">
+	  <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img2020/img21/apparelGW/junatf23/unrecapay/KA_3000._CB603210873_.jpg" alt="Chicago" width="1100" height="500">
+	  </a>
+      <div class="carousel-caption">
+        <h3  class="py-6" style="color:#ff8080 ; font-size:2vw;">Dresses & jumpsuit | Tops & Tees | Pyjamas & Joggers etc.</h3>
+        <p  style="color:#ff8080">Price and other details may vary based on product size and colour.</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+	<a href="https://www.amazon.in/s?k=play+learn+and+innovative&crid=1O12YPOHUO9TO&sprefix=play+learn+and+innovative%2Caps%2C343&ref=nb_sb_noss">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Toys/GW/Amazon_GRD_DesktopHero_Template_3000x1200-STEAM._CB602034387_.jpg" alt="New York" width="1100" height="500">
+	 </a> 
+      <div class="carousel-caption">
+        <h3  class="py-6" style="color:#ff8080 ; font-size:2vw;">Toys & Games | Learning & Education | Puzzels | Games Etc.</h3>
+        <p  style="color:#ff8080">We love the Big Apple!</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+<section class="my-5" >
+<div  class="py-5">
+   <h2 class="pl-2 display-5"> <label style="color:orange">| </label> About echodot  .  </h2>
+   </div>
+   
+   <div class="container-fluid">
+   <div class="row">
+
+		<div class="col-lg-6 col-md-6 col-12">
+		
+		<img src="https://m.media-amazon.com/images/I/41zesmSBqlL.jpg" class="img-fluid aboutimg">
+		</div>
+		
+		<div class="col-lg-6 col-md-6 col-12">
+		
+		<h2 class="display-6">  <label style="color:orange">" </label> Hello ! I am Alexa.  <label style="color:orange">"</label></h2>
+		<p class="py-5">
+		- 4th Generation Echo Dot -Smart Speaker with Alexa that can be operated by voice.</br>
+		- Alexa can speak English and Hindi.</br>
+		
+        - Improved bass performance compared to Echo Dot 3rd Gen.
+        </br>
+        - Just ask Alexa to play music from Amazon Music, Hungama, Spotify, Jio Saavn, Apple Music. (some apps may require subscription).
+		</p>
+	    <a href="https://www.amazon.in/Black-Combo-Wipro-Smart-Color/dp/B098QK8HWR/?_encoding=UTF8&pd_rd_w=hHOmV&content-id=amzn1.sym.77f3c872-007d-42e5-b0b4-eed6d696d4a9&pf_rd_p=77f3c872-007d-42e5-b0b4-eed6d696d4a9&pf_rd_r=4YGAQ7BXJR174P19WN2G&pd_rd_wg=Xq3uH&pd_rd_r=b5b5389d-0b75-48b1-b6b6-556986f9740c&ref_=pd_gw_deals_m1_t1" class="btn btn-warning"> learn more </a>
+			
+		</div>
+   </div>
+   </div>
+</section>
+
+<section class="my-5" >
+	<div  class="py-5">
+		<h2 class=" pl-2 display-5">  <label style="color:orange">| </label>Best offer of week .  </h2>
+	</div>
+	
+	<div class="container-fluid">
+		<div class="row ">
+			<div class="col-lg-3 col-md-3 col-12"  > 
+			
+			   <div class="card zoom"   style="height:500px">
+					<img class="card-img-top" src="https://m.media-amazon.com/images/I/71c6fA0zXuS._UY695_.jpg" alt="Card image">
+						<div class="card-body">
+							<h4 class="card-title">Puma</h4>
+							<p class="card-text">Best Offer For Puma.</p>
+							<a href="#" class="btn btn-warning">Buy Now</a>
+						</div>
+				</div>
+			</div>
+			
+			
+			
+				<div class="col-lg-3 col-md-3 col-12"  > 
+			   <div class="card zoom"  style="height:500px"  >
+					<img class="card-img-top" src="https://m.media-amazon.com/images/I/510kq0tXAzL._SX679_.jpg" alt="Card image">
+						<div class="card-body">
+							<h4 class="card-title">Wild Stone </h4>
+							<h6 class="card-text" >Wild Stone, Secret Temptation </h6>
+							<a href="https://www.amazon.in/deal/54e5acd7/?_encoding=UTF8&_ref=dlx_gate_sd_
+							dcl_tlt_54e5acd7_dt&pd_rd_w=gUoSG&content-id=amzn1.sym.9e4ae409-2145-4395-aa6e-45d7f3e95c3e&pf
+							_rd_p=9e4ae409-2145-4395-aa6e-45d7f3e95c3e&pf_rd_r=4YGAQ7BXJR174P19WN2G&pd_rd_wg=Xq3uH&pd_rd_
+							r=b5b5389d-0b75-48b1-b6b6-556986f9740c&ref_=pd_gw_unk" class="btn btn-warning">Buy Now</a>
+						</div>
+				</div>
+			</div>
+			
+			
+				<div class="col-lg-3 col-md-3 col-12"> 
+			   <div class="card zoom"   style="height:500px"  >
+					<img class="card-img-top" src="https://m.media-amazon.com/images/I/61UgL2BcaUL._SX679_.jpg" alt="Card image">
+						<div class="card-body">
+							<h4 class="card-title">Spider plant</h4>
+							<a href="https://www.amazon.in/stores/Ugaoo/page/9519D9F4-25CB-49F6-A2D0-F5F7C39B0C18?ref_=ast_bln"><p class="card-text">Visit the UGAOO Store</p><a>
+							<a href="#" class="btn btn-warning">Buy Now</a>
+						</div>
+				</div>
+			</div>
+			
+			
+				<div class="col-lg-3 col-md-3 col-12"> 
+			   <div class="card zoom"   style="height:500px" >
+					<img class="card-img-top" src="https://m.media-amazon.com/images/I/81tZ86QO4ML._SX679_.jpg" alt="Card image">
+						<div class="card-body">
+							<h4 class="card-title">Jute Baskets</h4>
+							<a href="https://www.amazon.in/stores/HabereIndia-AlltheCultures
+							fabricatingIndia/page/C35083C2-D23E-4E3D-83AE-E00F09184831?ref_=ast_bln">
+							<p class="card-text">Visit the Habere India</p>
+							</a>
+							<a href="#" class="btn btn-warning">Buy Now</a>
+						</div>
+				</div>
+			</div>
+			
+			
+		</div>
+	
+	</div>
+	
+	
+	
+</section>
+
+
+
+
+
+
+
+<section class="my-5" >
+<div  class="py-5">
+   <h2 class=" pl-2 display-5"> <label style="color:orange"> | </label> Give your home an elegant look  .  </h2>
+   </div>
+   
+   <div class="container-fluid">
+      <div class="row">
+	  
+			<div class="col-lg-4 col-md-4 col-12 zoom">
+			<a href="https://www.amazon.in/Kaka-jiji-Handicraft-Venkateswara-Multicolour/
+			dp/B093XWFSNJ/?_encoding=UTF8&pd_rd_w=T9Drj&content-id=amzn1.sym.b4ce8e88-e0fb
+			-44da-ab39-170737c9330e&pf_rd_p=b4ce8e88-e0fb-44da-ab39-170737c9330e&pf_rd_
+			r=4YGAQ7BXJR174P19WN2G&pd_rd_wg=vLbjV&pd_rd_r=f3a2dde0-5b51-4c67-bbc9-d1db75936b9d&ref_=pd_gw_
+			lsgw-home-mo-shov">
+			<img style="  border-radius: 20%;" src="https://m.media-amazon.com/images/I/91EF115AuzL._AC_SY400_.jpg" class="img-fluid pb-4  ">
+			</a>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-12  zoom">
+			<a href="https://www.amazon.in/Decor-Production-Lamination-sparkle_poster_pt2-Multicolor/dp/B08TH6YL
+			1W/?_encoding=UTF8&pd_rd_w=T9Drj&content-id=amzn1.sym.b4ce8e88-e0fb-44da-ab39-170737c9330e&pf_rd_
+			p=b4ce8e88-e0fb-44da-ab39-170737c9330e&pf_rd_r=4YGAQ7BXJR174P19WN2G&pd_rd_wg=vLbjV&pd_rd_r=f3a2dde0-5
+			b51-4c67-bbc9-d1db75936b9d&ref_=pd_gw_lsgw-home-mo-shov">
+			 <img style="  border-radius: 20%;" src="https://m.media-amazon.com/images/I/81ABxpz1ZJL._AC_SY400_.jpg" class="img-fluid pb-4  ">
+			 </a>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-12 zoom">
+			<a href="https://www.amazon.in/Living-Ticking-Decorative-Bedroom-Kitchen/dp/B0BL34DF85/?_encoding=UTF8&pd_
+			rd_w=T9Drj&content-id=amzn1.sym.b4ce8e88-e0fb-44da-ab39-170737c9330e&pf_rd_p=b4ce8e88-e0fb-44da-ab39-17073
+			7c9330e&pf_rd_r=4YGAQ7BXJR174P19WN2G&pd_rd_wg=vLbjV&pd_rd_r=f3a2dde0-5b51-4c67-bbc9-d1db75936b9d&ref_=pd_gw
+			_lsgw-home-mo-shov">
+			 <img style="  border-radius: 20%;" src="https://m.media-amazon.com/images/I/61fD6N8mnOL._AC_SY400_.jpg" class="img-fluid pb-4  ">
+			 </a>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-12  zoom">
+			<a href="https://www.amazon.in/Craftam-Handmade-Decorative-Painting-Embossed/dp/B08ZDT
+			HZCB/?_encoding=UTF8&pd_rd_w=T9Drj&content-id=amzn1.sym.b4ce8e88-e0fb-44da-ab39-170737
+			c9330e&pf_rd_p=b4ce8e88-e0fb-44da-ab39-170737c9330e&pf_rd_r=4YGAQ7BXJR174P19WN2G&pd_
+			rd_wg=vLbjV&pd_rd_r=f3a2dde0-5b51-4c67-bbc9-d1db75936b9d&ref_=pd_gw_lsgw-home-mo-shov">
+			 <img style="  border-radius: 20%;" src="https://m.media-amazon.com/images/I/913PsitC1tL._AC_SY400_.jpg" class="img-fluid pb-4  ">
+			 </a>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-12  zoom">
+			<a href="https://www.amazon.in/Water-Tale-Dragonflies-Clock-Kolorobia/dp/B09MHKGQ92/?_encoding=UTF
+			8&pd_rd_w=T9Drj&content-id=amzn1.sym.b4ce8e88-e0fb-44da-ab39-170737c9330e&pf_rd_p=b4ce8e88-e0fb-44
+			da-ab39-170737c9330e&pf_rd_r=4YGAQ7BXJR174P19WN2G&pd_rd_wg=vLbjV&pd_rd_r=f3a2dde0-5b51-4c67-bbc9-d
+			1db75936b9d&ref_=pd_gw_lsgw-home-mo-shov">
+			 <img style="  border-radius: 20%;" src="https://m.media-amazon.com/images/I/71cHs6fwQvL._AC_SY400_.jpg" class="img-fluid pb-4 ">
+			 </a>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-12 zoom">
+			<a href="https://www.amazon.in/Artisan-Emporium-Holder-Set-Decoration-Hand-Painted/dp/B09J91C1PT/?
+			_encoding=UTF8&pd_rd_w=T9Drj&content-id=amzn1.sym.b4ce8e88-e0fb-44da-ab39-170737c9330e&pf_rd_p=b4c
+			e8e88-e0fb-44da-ab39-170737c9330e&pf_rd_r=4YGAQ7BXJR174P19WN2G&pd_rd_wg=vLbjV&pd_rd_r=f3a2dde0-5b51-
+			4c67-bbc9-d1db75936b9d&ref_=pd_gw_lsgw-home-mo-shov">
+			 <img style="  border-radius: 20%;" src="https://m.media-amazon.com/images/I/81dzfVX4J2L._AC_SY400_.jpg" class="img-fluid pb-4  ">
+			 </a>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-12 zoom">
+			<a href="https://www.amazon.in/DECORE-BASKET-Decor-Metal-Bullet/dp/B08HK3PMQT/?_encoding=UTF8&pd
+			_rd_w=T9Drj&content-id=amzn1.sym.b4ce8e88-e0fb-44da-ab39-170737c9330e&pf_rd_p=b4ce8e88-e0fb-44da
+			db75936b9d&ref_=pd_gw_lsgw-home-mo-shov">
+		
+			 <img style="  border-radius: 20%;" src="https://m.media-amazon.com/images/I/61uTQSDyaZL._AC_SY400_.jpg" class="img-fluid pb-2  ">
+			 </a>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-12 zoom">
+			<a href=" https://www.amazon.in/dp/B08WCFQC8K/ref=sspa_dk_detail_0?psc=1&pd_rd_
+			i=B08WCFQC8K&pd_rd_w=YSxow&content-id=amzn1.sym.2575ab02-73ff-40ca-8d3a-4fbe87c5a28d&pf
+			_rd_p=2575ab02-73ff-40ca-8d3a-4fbe87c5a28d&pf_rd_r=9KHHHQQ8Y9D0FQXFZPWP&pd_rd_wg=pHnWB&pd_
+			rd_r=af4a8f77-681f-4be3-bdb1-681aad174b0b&s=kitchen&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw">
+			 <img style="  border-radius: 20%;" src="https://m.media-amazon.com/images/I/71m9ltbY2IL._SX679_.jpg" class="img-fluid pb-2  ">
+			 </a>
+			</div>
+			
+			<div class="col-lg-4 col-md-4 col-12  zoom">
+			<a href=" https://www.amazon.in/Home-Decorative-Handpainted-24x12x30-
+			Rajasthani/dp/B08K2SFWRB/?_encoding=UTF8&pd_rd_w=T9Drj&content-id=amzn1
+			.sym.b4ce8e88-e0fb-44da-ab39-170737c9330e&pf_rd_p=b4ce8e88-e0fb-44da-ab39-170737c9330e&pf_rd_r=4YGAQ7BXJR
+			174P19WN2G&pd_rd_wg=vLbjV&pd_rd_r=f3a2dde0-5b51-4c67-bbc9-d1db75936
+			 b9d&ref_=pd_gw_lsgw-home-mo-shov">
+			 <img style="  border-radius: 20%;" src="https://m.media-amazon.com/images/I/81632v7iKkL._SX679_.jpg" class="img-fluid pb-2 ">
+			 </a>
+			</div>
+			
+			
+			
+			
+
+	  </div>
+   </div>
+   
+</section>
+
+
+
+
+
+<section class="my-5" >
+    <div  class="py-5">
+		<h2 class=" pl-2 display-5"> <label style="color:orange">| </label> Contact  .  </h2>
+    </div>
+    <div class=" w-50 m-auto">
+		<form action="userinfo.php" method ="post">
+		   <div class="form-group ">
+				<label> Username </label>
+				<input type="text" name="user" placeholder="Enter Username " class="form-control"/> 
+		   </div>
+		   
+		   <div class="form-group ">
+				<label> Email</label>
+				<input type="varchar" name="email" placeholder="Enter Email " class="form-control"/> 
+		   </div>
+		   
+		   <div class="form-group ">
+				<label> Mobile number </label>
+				<input type="text" name="phone" placeholder="Enter Username " class="form-control"/> 
+		   </div>
+		   
+		   <div class="form-group ">
+				<label> Comment </label>
+				<textarea name="comment" class="form-control" placeholder="Comment Your Thoughts"></textarea>
+		   </div>
+		   
+		   <button class="btn btn-warning"type="submit"> Submit </button>
+		
+	    </form>
+    </div>
+   
+   
+    
+</section>
+
+
+
+
+
+
+   
+ <footer>
+
+	<h3 style="font-size:1vw">
+	<div class="container-fluid ">
+	    <div class="row">
+			<div class="col-lg-3 col-md-3 col-12 p-3 bg-dark text-white">
+	
+					AbeBooks
+					Books, </br>art
+					& collectibles	
+			</div>
+		
+			<div class="col-lg-3 col-md-3 col-12 p-3 bg-dark text-white">
+					Vamazon Web Services
+					Scalable Cloud </br>
+					Computing Services
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-12 p-3 bg-dark text-white">
+					Audible </br>
+					Download
+					Audio Books		
+					
+			</div>	  			
+					
+			<div class="col-lg-3 col-md-3 col-12 p-3 bg-dark text-white">
+					DPReview </br>
+					Digital
+					Photography		
+ 
+			</div> 
+
+		 
+			<div class="col-lg-3 col-md-3 col-12 p-3 bg-dark text-white">			
+					IMDb
+					Movies,</br> TV
+					& Celebrities
+					 
+			</div>	
+		 
+			<div class="col-lg-3 col-md-3 col-12 p-3 bg-dark text-white">			 
+					Shopbop
+					Designer</br>
+					Fashion Brands	
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-12 p-3 bg-dark text-white">
+					Vamazon Business </br>
+					Everything For
+					Your Business
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-12 p-3 bg-dark text-white">
+					Prime Now </br>
+					2-Hour Delivery
+					on Everyday Items	
+			</div>
+
+			<div class="col-lg-12 col-md-12 col-12 p-3 bg-dark text-white">
+					Vamazon Prime Music
+					100 million songs,</br> ad-free
+					Over 15 million podcast episodes		 
+
+			</div>					
+						
+						
+						
+			
+		
+
+         <div class="col-lg-12 col-md-12 col-12 p-3 bg-dark text-white text-center">
+						Conditions of Use & Sale
+					Privacy Notice
+					Interest-Based Ads </br>
+					 1996-2023, Vamazon.com, Inc. or its affiliates
+					 </div>
+	
+	    </div>
+				 
+    </div>		 
+	</div>			 
+ </footer>
+   
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
